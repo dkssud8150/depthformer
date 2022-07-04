@@ -7,7 +7,28 @@ __pycache__/
 *.so
 
 # data
-data
+data/nyu/
+data/kitti/benchmark*
+data/kitti/gt_depth/2011_09_28
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_003*_sync
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_004*_sync
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_005*_sync
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_007*_sync
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_006*_sync
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_008*_sync
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_009*_sync
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_01*
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_0018*
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_0015*
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_0011*
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_0014*
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_0017*
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_0019*
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_0022*
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_0027*
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_0028*
+data/kitti/gt_depth/2011_09_26/2011_09_26_drive_0029*
+
 
 # Distribution / packaging
 .Python
@@ -106,7 +127,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-data
 .vscode
 .idea
 
