@@ -185,8 +185,11 @@ class DepthBaseDecodeHead(BaseModule, metaclass=ABCMeta):
 
     @force_fp32(apply_to=('depth_pred', ))
     def losses(self, depth_pred, depth_gt):
-        """Compute depth loss."""
+        """Compute depth loss, after same dimension between prediction map and gt map """
         loss = dict()
+        print(f"\n\n##########\ndepth_pred : {depth_pred.shape}\tdepth_gt : {depth_gt.shape[2:]}\n##########\n\n")
+        if len(depth_gt.shape) > 4:
+            depth_gt = depth_gt[...,0]
         depth_pred = resize(
             input=depth_pred,
             size=depth_gt.shape[2:],
