@@ -7,7 +7,16 @@ __pycache__/
 *.so
 
 # data
-data/nyu/
+data/nyu/kitchen*
+data/nyu/living_room*
+data/nyu/laundry_room*
+data/nyu/nyu_office*
+data/nyu/office*
+data/nyu/playroom*
+data/nyu/printer_room*
+data/nyu/reception*
+data/nyu/study*
+data/nyu/student_lounge*
 data/kitti/benchmark*
 data/kitti/gt_depth/2011_09_28
 data/kitti/gt_depth/2011_09_26/2011_09_26_drive_003*_sync
