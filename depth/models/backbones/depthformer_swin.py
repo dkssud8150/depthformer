@@ -667,7 +667,6 @@ class DepthFormerSwin(BaseModule):
         self.conv_cfg = conv_cfg
         self.conv_norm_cfg = conv_norm_cfg
         self.style = style
-        pretrained = './checkpoints/depthformer_swinl_22k_kitti.pth'
 
         if isinstance(pretrain_img_size, int):
             pretrain_img_size = to_2tuple(pretrain_img_size)

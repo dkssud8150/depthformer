@@ -4,13 +4,14 @@ _base_ = [
 ]
 
 model = dict(
+    pretrained = 'https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_large_patch4_window7_224_22k.pth',
+    # init_cfg=dict(type='pretrained', checkpoint='./checkpoints/depthformer_swinl_22k_kitti.pth'),
     backbone=dict(
-        pretrained = 'https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_large_patch4_window7_224_22k.pth',
         embed_dims=192,
         depths=[2, 2, 18, 2],
         num_heads=[6, 12, 24, 48],
-        window_size=7),
-        init_cfg=dict(type='pretrained', checkpoint='./checkpoints/depthformer_swinl_22k_kitti.pth'),
+        window_size=7
+        ),
     neck=dict(
         type='HAHIHeteroNeck',
         positional_encoding=dict(
